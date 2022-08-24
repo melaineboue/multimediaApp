@@ -1,0 +1,14 @@
+<button (click)="selectionnerMois(mois.indice)" class="btn mb-3 me-2" [ngClass]="{'btn-secondary': !moisEstSelectionne(mois.indice), 'btn-primary': moisEstSelectionne(mois.indice)}"
+  *ngFor="let mois of moisSelection">{{mois.libelle}}</button>
+<hr>
+
+<div class="mb-3">
+  <button (click)="genererMois()" class="btn btn-primary">Générer</button>
+  <button class="ms-2 btn btn-light"><i class="bi bi-gear-fill settings"></i></button>
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-sm-12 col-xs-12 mb-3" *ngFor="let programme of programmePeriode.programmes">
+    <!--<app-programme-jour [programme]="programme"></app-programme-jour>-->
+  </div>
+</div>

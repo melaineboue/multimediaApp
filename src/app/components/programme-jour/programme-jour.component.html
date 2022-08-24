@@ -1,0 +1,14 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col" class="date" colspan="2">{{ programme.date }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pole of listePole">
+      <td scope="row">{{ getPoleFromCode(pole) }} </td>
+      <td> {{ getProgrammeFromPole(pole) }} </td>
+    </tr>
+
+  </tbody>
+</table>
